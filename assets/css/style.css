@@ -1,7 +1,7 @@
-@import url("");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root{
-    --header-height:3 rem ;
+    --header-height: 3rem ;
     --nav-width:324px;
 
     --font-medium:500;
@@ -16,9 +16,9 @@
     --first-color-lighten:#FFFAFA;
 
     --body-font: 'Poppins', sans-serif;
-    --h1-font-size:1.5rem;
-    --h2-font-size:1.25rem;
-    --h3-font-size:1rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -35,9 +35,9 @@
 
 @media screen and (min-width: 768px){
     :root{
-        --h1-font-size:2.25rem;
-        --h2-font-size:1.5rem;
-        --h3-font-size:1.25rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
@@ -47,12 +47,12 @@
     
 }
 
-::before,::after{
+*,::before,::after{
     box-sizing: border-box;
 }
 
 html{
-    scroll-behavior:smooth ;
+    scroll-behavior: smooth ;
 }
 
 body{
@@ -111,7 +111,7 @@ img{
     margin-bottom: .25rem;
 }
 
-bd-grid{
+.bd-grid{
     max-width: 1025px;
     display: grid;
     grid-template-columns: 100%;
@@ -352,53 +352,36 @@ bd-grid{
 
 .skills_bar{
     position: absolute;
-    bottom: -.7.5rem;
-    height: .2.5rem;
+    bottom: -.75rem;
+    height: .25rem;
     background-color: var(--first-color-dark);
 }
 
 .skills_html{
-    position: absolute;
-    width: 80%;
-    height: 5px;
-    border-radius: 20%;
-    columns: var(--first-color-dark);
+    width: 80%;  
 }
 .skills_js{
     width: 90%;
-    height: 5px;
-    border-radius: 20%;
+   
 }
 .skills_react{
     width: 70%;
-    height: 5px;
-    border-radius: 20%;
 }
 .skills_angular{
     width: 60%;
-    height: 5px;
-    border-radius: 20%;
 }
 
 .skills_php{
     width: 80%;
-    height: 5px;
-    border-radius: 20%;
 }
 .skills_node{
     width: 90%;
-    height: 5px;
-    border-radius: 20%;
 }
 .skills_firebase{
     width: 70%;
-    height: 5px;
-    border-radius: 20%;
 }
 .skills_python{
     width: 60%;
-    height: 5px;
-    border-radius: 20%;
 }
 
 .education_container{
@@ -743,7 +726,7 @@ bd-grid{
     }
 }
 
-@media screen and (min-width: 1024){
+@media screen and (min-width: 1024px){
     body{
         margin: 0;
         padding-left: var(--nav-width);
@@ -753,7 +736,7 @@ bd-grid{
         width: 0;
     }
 
-    .nav_toggle, .nav_logo, .nav_close{
+    .nav_toggle , .nav_logo , .nav_close{
         display: none;
     }
 
@@ -775,7 +758,7 @@ bd-grid{
 
     .services_container,
     .works_container{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat( 3,1fr);
     }
 }
 
